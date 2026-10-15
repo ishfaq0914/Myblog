@@ -14,7 +14,7 @@ export const AUTHOR_CONFIG: AuthorProfile = {
   email: 'ishuishfaqshafi@gmail.com',
   location: 'India',
   status: 'Open for collaborations & open-source exploration',
-  avatarUrl: '/src/assets/images/ishfaq_branding_portrait_1792051730327.jpg',
+  avatarUrl: '/src/assets/images/ishfaq_author_portrait_1792050216428.jpg',
   
   // Update these URLs with your real profiles
   socials: {

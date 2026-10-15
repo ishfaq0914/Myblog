@@ -18,7 +18,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenContact }) => 
               src={AUTHOR_CONFIG.avatarUrl}
               alt={AUTHOR_CONFIG.name}
               referrerPolicy="no-referrer"
-              className="w-full h-auto object-cover object-top aspect-[2/3]"
+              className="w-full h-auto object-cover aspect-square"
             />
             <div className="p-6 bg-[#11131A] border-t border-white/5 space-y-4">
               <div>
