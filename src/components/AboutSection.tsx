@@ -1,6 +1,7 @@
 import React from 'react';
 import { AUTHOR_CONFIG } from '../data/authorConfig';
 import { Terminal, Shield, Cpu, Sparkles, ExternalLink, Mail } from 'lucide-react';
+import { CyberneticIdentityConsole } from './CyberneticIdentityConsole';
 
 interface AboutSectionProps {
   onOpenContact: () => void;
@@ -11,20 +12,15 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenContact }) => 
     <section className="py-20 px-6 lg:px-12 max-w-7xl mx-auto border-t border-white/5">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
         
-        {/* Left Column: Portrait & Quick Dossier (5 cols) */}
-        <div className="lg:col-span-5">
-          <div className="rounded-3xl overflow-hidden border border-white/10 bg-[#11131A] relative shadow-2xl">
-            <img
-              src={AUTHOR_CONFIG.avatarUrl}
-              alt={AUTHOR_CONFIG.name}
-              referrerPolicy="no-referrer"
-              className="w-full h-auto object-cover aspect-square"
-            />
-            <div className="p-6 bg-[#11131A] border-t border-white/5 space-y-4">
-              <div>
-                <h3 className="text-xl font-bold font-display text-[#F5F5F0]">{AUTHOR_CONFIG.name}</h3>
-                <p className="text-xs text-[#9699A5] mt-0.5">{AUTHOR_CONFIG.title}</p>
-              </div>
+        {/* Left Column: Interactive Cybernetic Console & Quick Dossier (5 cols) */}
+        <div className="lg:col-span-5 space-y-6">
+          <CyberneticIdentityConsole />
+
+          <div className="p-6 rounded-3xl bg-[#11131A] border border-white/5 space-y-4">
+            <div>
+              <h3 className="text-xl font-bold font-display text-[#F5F5F0]">{AUTHOR_CONFIG.name}</h3>
+              <p className="text-xs text-[#9699A5] mt-0.5">{AUTHOR_CONFIG.title}</p>
+            </div>
 
               {/* Status and Location */}
               <div className="space-y-2 text-xs font-mono text-[#9699A5] pt-2 border-t border-white/5">
@@ -62,7 +58,6 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenContact }) => 
               </div>
             </div>
           </div>
-        </div>
 
         {/* Right Column: Narrative & Pillars (7 cols) */}
         <div className="lg:col-span-7 space-y-8">

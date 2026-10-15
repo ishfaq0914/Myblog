@@ -104,15 +104,10 @@ export const FeaturedArticleHero: React.FC<FeaturedArticleHeroProps> = ({
             {/* Footer with Author & CTA */}
             <div className="mt-8 pt-6 border-t border-white/5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div className="flex items-center gap-3">
-                <div className="w-9 h-9 rounded-full bg-[#181A24] border border-white/10 overflow-hidden shrink-0">
-                  <img
-                    src={AUTHOR_CONFIG.avatarUrl}
-                    alt={article.author}
-                    className="w-full h-full object-cover"
-                    onError={(e) => {
-                      (e.target as HTMLElement).style.display = 'none';
-                    }}
-                  />
+                <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#181A24] to-[#08090D] border border-[#C7FF4A]/40 flex items-center justify-center shrink-0 shadow-[0_0_10px_rgba(199,255,74,0.15)]">
+                  <span className="font-display font-black text-xs tracking-tighter text-[#C7FF4A]">
+                    IS
+                  </span>
                 </div>
                 <div>
                   <div className="text-xs font-semibold text-[#F5F5F0]">{article.author}</div>

@@ -311,12 +311,10 @@ if __name__ == "__main__":
               {/* Author Card */}
               <div className="p-5 rounded-2xl bg-[#11131A] border border-white/5">
                 <div className="flex items-center gap-3 mb-3">
-                  <div className="w-12 h-12 rounded-full overflow-hidden border border-white/10 shrink-0">
-                    <img
-                      src={AUTHOR_CONFIG.avatarUrl}
-                      alt={AUTHOR_CONFIG.name}
-                      className="w-full h-full object-cover"
-                    />
+                  <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[#181A24] to-[#08090D] border border-[#C7FF4A]/40 flex items-center justify-center shrink-0 shadow-[0_0_12px_rgba(199,255,74,0.15)]">
+                    <span className="font-display font-black text-sm tracking-tighter text-[#C7FF4A]">
+                      IS
+                    </span>
                   </div>
                   <div>
                     <h4 className="text-sm font-semibold text-[#F5F5F0]">{AUTHOR_CONFIG.name}</h4>
