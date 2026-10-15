@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --color-obsidian: #08090D;
+  --color-charcoal: #11131A;
+  --color-surface: #151822;
+  --color-surface-hover: #1D2130;
+  --color-warm-white: #F5F5F0;
+  --color-electric-lime: #C7FF4A;
+  --color-vivid-violet: #9270FF;
+  --color-cool-gray: #9699A5;
+  --color-border-subtle: rgba(255, 255, 255, 0.08);
+
+  --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'Newsreader', Georgia, serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+/* Base custom styles */
+body {
+  background-color: #08090D;
+  color: #F5F5F0;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #08090D;
+}
+::-webkit-scrollbar-thumb {
+  background: #1D2130;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9270FF;
+}
+
+/* Subtle background grid pattern for tech atmosphere */
+.bg-subtle-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+}
+
+.bg-radial-glow {
+  background: radial-gradient(circle at 50% 0%, rgba(146, 112, 255, 0.12), transparent 70%);
+}
