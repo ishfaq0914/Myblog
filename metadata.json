@@ -2,6 +2,7 @@
   "name": "ISHFAQ SHAFI — Beyond the Code",
   "description": "The personal digital publication, engineering journey, and cybersecurity journal of Ishfaq Shafi.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }
-
